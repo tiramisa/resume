@@ -12,6 +12,12 @@
     url('/path-to-your-fonts/helvetica.woff2') format('woff2');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Стили для основной обертки */
 
 .wrapper {
@@ -35,14 +41,17 @@
   margin-bottom: 20px;
 }
 
+.my-profession {
+  margin-bottom: 8px;
+}
 
 /* Стили для заголовка "Projects" */
 .projects-title {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 8px;
+  margin-top: 32px;
 }
 
-/* Стили для списка проектов */
 .projects-list {
   list-style-type: disc;
   margin-left: 20px;
@@ -56,8 +65,8 @@
 /* Стили для заголовка "Tech Skills" и "Soft Skills" */
 .sidebar-title {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 /* Стили для списка технических навыков и софт-скиллов */
@@ -87,9 +96,11 @@
 
 .time {
   color: #777;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-/* Стили для разделительной линии (например, "|") */
+/* Стили для ("|") */
 .stick {
   margin: 0 5px;
 }
@@ -124,7 +135,6 @@ h1 {
 }
 
 h2 {
-
   font-size: 24px;
   margin: 0;
 }
@@ -134,16 +144,49 @@ h3 {
   margin: 0;
 }
 
+.work-title {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.profession,
+.university {
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
 h4 {
   font-weight: 500;
   font-size: 18px;
   margin: 0;
 }
 
-
-
 .almost-black {
   color: #333;
   font-size: 16px;
   line-height: 1.5;
+}
+
+/* Подчеркивание ссыки */
+.line {
+  position: relative;
+  color: #333;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.line:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4b4b4b;
+  content: "";
+  transition: width 0.5s ease-out;
+}
+
+.line:hover:after,
+.line:focus:after {
+  width: 100%;
 }
