@@ -119,8 +119,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: #333;
+  color: #0000008e;
   transition: color 0.2s ease;
 }
 
