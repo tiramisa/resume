@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'MyArial';
+  src: url('/path-to-your-fonts/arial.ttf') format('truetype'),
+    url('/path-to-your-fonts/arial.woff') format('woff'),
+    url('/path-to-your-fonts/arial.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MyHelvetica';
+  src: url('/path-to-your-fonts/helvetica.ttf') format('truetype'),
+    url('/path-to-your-fonts/helvetica.woff') format('woff'),
+    url('/path-to-your-fonts/helvetica.woff2') format('woff2');
+}
+
+/* Стили для основной обертки */
+
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Стили для контейнера с основным контентом */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Стили для контейнера "Обо мне" */
+
+.about-me-container {
+  margin-bottom: 20px;
+}
+
+
+/* Стили для заголовка "Projects" */
+.projects-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Стили для списка проектов */
+.projects-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Стили для работы */
+.work {
+  margin-bottom: 20px;
+}
+
+/* Стили для заголовка "Tech Skills" и "Soft Skills" */
+.sidebar-title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Стили для списка технических навыков и софт-скиллов */
+.skills-listp {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Стили для элементов списка */
+.skills-list-item {
+  margin-bottom: 5px;
+}
+
+/* Стили для контактов */
+.contacts-container {
+  margin-bottom: 20px;
+}
+
+
+/* Стили для контактов*/
+.contacts-link {
+  margin-left: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+.time {
+  color: #777;
+}
+
+/* Стили для разделительной линии (например, "|") */
+.stick {
+  margin: 0 5px;
+}
+
+/* Стили для изображения */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Остальные общие стили */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: #777;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h2 {
+
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+.almost-black {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
