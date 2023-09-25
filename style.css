@@ -108,8 +108,10 @@
 /* Стили для изображения */
 img {
   max-width: 100%;
-  height: auto;
+  height: 330px;
   display: block;
+  object-fit: cover;
+  padding-right: 10px;
 }
 
 /* Остальные общие стили */
